@@ -120,7 +120,7 @@ def symbolic_solution():
                         except (IndexError, TypeError):
                             math_symbol = operand1[1] + operator + operand2[1]
                 
-                if valid_symbol[operator][0] < 3:
+                if (valid_symbol[operator][0] < 3) and (len(notation)) != 3:
                     
                     math_symbol = '(' + math_symbol + ')'
 
@@ -149,5 +149,5 @@ def symbolic_solution():
 
 #two_operands()
 #multiple_operands()
-#symbolic_solution()
+symbolic_solution()
 
